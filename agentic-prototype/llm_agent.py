@@ -17,7 +17,7 @@ class LLMAgent:
         )
 
     def _generate(self, messages, max_tokens=300):
-        # Apply chat template (IMPORTANT for Phi-3)
+        # Apply chat template 
         prompt = self.tokenizer.apply_chat_template(
             messages,
             tokenize=False,
