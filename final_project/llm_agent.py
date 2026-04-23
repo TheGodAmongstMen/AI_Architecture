@@ -60,7 +60,7 @@ class LLMAgent:
     def explain_results(self, data):
         anomalies = data.get("anomalies", [])
 
-        if not anomalies:  # works for list
+        if not anomalies:
             return "No anomalies detected."
 
         summary = data.get("summary", {})
